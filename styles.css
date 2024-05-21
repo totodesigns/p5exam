@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+                    /* ---------- DESKTOP!!!! ---------- */
+
+/* DESIGN SYSTEM BASE */
+:root {
+    /* FARVER */
+    --blue: #0020be;
+    --blue-light: #9cf;
+    --blue-lightest: #dcedf5;
+
+    --violet: #201b59;
+    --violet-light: #d0bbe6;
+    --violet-lightest: #ecebff;
+
+    --green: #04393b;
+    --green-light: #8ecfd2;
+    --green-lightest: #dcf0f0;
+
+    --granite: #3c464c;
+    --granite-light: #c8d0da;
+    --granite-lightest: #e9ecee;
+
+    --sand: #4d4641;
+    --sand-light: #dcd2ca;
+    --sand-lightest: #ebebeb;
+
+    --red: #593244;
+    --red-light: #e64652;
+    --red-lightest: #ffe6e6;
+
+    --black: #222222;
+    --grey: var(--sand-lightest);
+    --greywhite: #f9f9f9;
+    --white: #ffffff;
+
+    /* TYPEFACE */
+    font-family: "Space Grotesk", sans-serif;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+
+    /* TYPESCALE % */
+    --lineheight--xs: 106%;
+    --lineheight--s: 114%;
+    --lineheight--m: 117%;
+    --lineheight--l: 138%;
+    --lineheight--xl: 150%;
+
+    /* BORDERS */
+    --border-radius-on: 8px;
+    --border-radius-off: 0px;
+}
+
+/* DESIGN SYSTEM TYPESCALE */
+    /* HEADLINES */
+h1 {
+    font-size: 74px;
+    line-height: var(--lineheight--s);
+    font-weight: var(--regular);
+}
+h2 {
+    font-size: 60px;
+    line-height: var(--lineheight--m);
+    font-weight: var(--regular);
+}
+h3 {
+    font-size: 52px;
+    line-height: var(--lineheight--xs);
+    font-weight: var(--regular);
+}
+h4 {
+    font-size: 38px;
+    line-height: var(--lineheight--xs);
+    font-weight: var(--regular);
+}
+
+    /* TITLES */
+.t1 {
+    font-size: 28px;
+    line-height: var(--lineheight--m);
+    font-weight: var(--regular);
+}
+.t2 {
+    font-size: 20px;
+    line-height: var(--lineheight--xl);
+    font-weight: var(--medium);
+}
+.t3 {
+    font-size: 19px;
+    line-height: var(--lineheight--xl);
+    font-weight: var(--regular);
+}
+.t4 {
+    font-size: 18px;
+    line-height: var(--lineheight--l);
+    font-weight: var(--bold);
+}
+
+    /* PARAGRAPHS */
+p {
+    font-size: 16px;
+    line-height: var(--lineheight--xl);
+    font-weight: var(--regular);
+}
+
+    /* CAPTIONS */
+.c1 {
+    font-size: 12px;
+    line-height: var(--lineheight--xl);
+    font-weight: var(--light);
+}
+
+
+
