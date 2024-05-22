@@ -58,6 +58,14 @@
     --border-radius-off: 0px;
 }
 
+hr {
+    width: 100%;
+    height:1px;
+    border-width: 0;
+    color: var(--granite-light);
+    background-color: var(--granite-light);
+}
+
 /* DESIGN SYSTEM TYPESCALE */
     /* HEADLINES */
 h1 {
@@ -117,5 +125,44 @@ p {
     font-weight: var(--light);
 }
 
+/* BUTTONS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.primary {
+    background: transparent;
+    display: flex;
+    width: fit-content;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: var(--border-radius-on);
+    border: 0.8px solid var(--black);
+}
+
+.buttontextcontainer {
+    height: 1rem; /* Ensure this height matches the height of your text */
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove the gap to prevent unwanted spacing */
+    overflow: hidden;
+    top: -1px;
+}
+
+.buttontextdefault, .buttontextanimated {
+    transition: transform .3s cubic-bezier(.23,1,.32,1);
+}
+
+.primary:hover .buttontextdefault {
+    transform: translateY(-1.5rem);
+}
+
+.primary:hover .buttontextanimated {
+    transform: translateY(-1.5rem);
+}
 
 
