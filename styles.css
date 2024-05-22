@@ -103,7 +103,7 @@ h4 {
 .t3 {
     font-size: 19px;
     line-height: var(--lineheight--xl);
-    font-weight: var(--regular);
+    font-weight: var(--light);
 }
 .t4 {
     font-size: 18px;
@@ -115,7 +115,8 @@ h4 {
 p {
     font-size: 16px;
     line-height: var(--lineheight--xl);
-    font-weight: var(--regular);
+    font-weight: var(--light);
+    letter-spacing: -0.03em;
 }
 
     /* CAPTIONS */
@@ -125,13 +126,15 @@ p {
     font-weight: var(--light);
 }
 
-/* BUTTONS */
+                /* BUTTONS */
 
 a {
     text-decoration: none;
     color: inherit;
     font: inherit;
 }
+
+/* PRIMARY */
 
 .primary {
     background: transparent;
@@ -143,26 +146,97 @@ a {
     border-radius: var(--border-radius-on);
     border: 0.8px solid var(--black);
 }
-
 .buttontextcontainer {
     height: 1rem; /* Ensure this height matches the height of your text */
     display: flex;
     flex-direction: column;
     gap: 0; /* Remove the gap to prevent unwanted spacing */
     overflow: hidden;
-    top: -1px;
 }
-
 .buttontextdefault, .buttontextanimated {
     transition: transform .3s cubic-bezier(.23,1,.32,1);
 }
-
 .primary:hover .buttontextdefault {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.4rem);
 }
-
 .primary:hover .buttontextanimated {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.4rem);
 }
 
+/* SECONDARY */
+
+.secondary {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+}
+.secondary > svg {
+    transition: transform 0.3s cubic-bezier(.23,1,.32,1); /* Smooth transition for the arrow */
+    transform-origin: left;
+}
+.secondary:hover > svg {
+    transform: scaleX(1.4); /* Adjust the value as needed to stretch the arrow */
+}
+.secondary:hover > p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+                /* GLOBAL BLOCKS */
+
+/* FOOTER */
+
+footer {
+    background-color: var(--grey);
+    display: flex;
+    width: 100%;
+    padding: 125px 50px 100px 50px;
+    flex-direction: column;
+}
+.footercta {
+    display: flex;
+    padding-bottom: 150px;
+    flex-direction: column;
+    gap: 15px;
+}
+#footerlogo {
+    font-size: 100px;
+    font-weight: var(--bold);
+}
+.org {
+    display: flex;
+    height: 329px;
+    align-items: flex-end;
+    gap: 100px;
+    align-self: stretch;
+}
+.orginfo {
+    display: flex;
+    gap: 50px;
+}
+.orgcard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* NAV BAR */
+nav {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    mix-blend-mode: difference;
+}
+nav > p, .navlogo {
+    color: var(--white);
+}
+.navlogo {
+    font-weight: var(--bold);
+}
 

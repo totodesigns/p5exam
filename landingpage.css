@@ -79,6 +79,7 @@ section {
     width: 70%;
 }
 .middlecta {
+    background-color: var(--grey);
     display: flex;
     padding: 100px 50px;
     flex-direction: column;
@@ -87,7 +88,7 @@ section {
 }
 #centertext {
     text-align: center;
-    width: 50%;
+    width: 30%;
 }
 .jobblock {
     display: flex;
@@ -112,7 +113,7 @@ section {
     padding-left: 32.78%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 120px;
     align-self: stretch;
 }
@@ -151,37 +152,4 @@ section {
     background-color: black;
     min-width: 412px;
     height: 478px;
-}
-footer {
-    background-color: var(--grey);
-    display: flex;
-    width: 100%;
-    padding: 125px 50px 100px 50px;
-    flex-direction: column;
-}
-.footercta {
-    display: flex;
-    padding-bottom: 150px;
-    flex-direction: column;
-    gap: 15px;
-}
-#footerlogo {
-    font-size: 100px;
-    font-weight: var(--bold);
-}
-.org {
-    display: flex;
-    height: 329px;
-    align-items: flex-end;
-    gap: 100px;
-    align-self: stretch;
-}
-.orginfo {
-    display: flex;
-    gap: 50px;
-}
-.orgcard {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
