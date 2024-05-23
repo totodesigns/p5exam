@@ -387,6 +387,9 @@ nav > p, .navlogo {
 .redbg {
     background-color: var(--red);
 }
+.greybg{
+    background-color: var(--grey) ;
+}
 
 /*___________________________________ ---------- MEDIA QUIRIES (+MOBILE!!!!) ---------- ______________________________________________________________________________*/
 @media only screen and (max-width: 1024px) {
@@ -519,3 +522,4 @@ nav > p, .navlogo {
         gap: 100px;
     }
 }
+
