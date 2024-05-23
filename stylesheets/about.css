@@ -1,0 +1,182 @@
+.sub_hero {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 186px 50px 100px 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+.pageheading {
+    display: flex;
+    align-items: flex-start;
+    gap: 122px;
+    align-self: stretch;
+}
+.titleframe {
+    width: 300px;
+}
+.titleframe > p {
+    color: var(--sand-lightest);
+}
+.pageheading > h1 {
+    width: 100%;
+    color: var(--sand-lightest);
+}
+.sub_hero_img {
+    height: 688px;
+    align-self: stretch;
+}
+.about {
+    color: var(--sand-lightest);
+    max-width: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: center;
+}
+.timelineblock {
+    display: flex;
+    width: 100%;
+    padding: 100px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.timelinetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.timeline {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.timelinecard {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text line image";
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+}
+.timelinetext {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.timelineheading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.timeline_line {
+    grid-area: line;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+}
+.timeline_topline, .timeline_botline {
+    border-left: 2px solid var(--granite-light);
+    height: 250px;
+}
+.timelineimg {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+.timelineimg > img {
+    display: block;
+    max-width: 100%; /* Ensures image does not exceed the container width */
+    height: auto; /* Maintains aspect ratio */
+    width: 100%; /* Ensures image fills the width of its container */
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.timelinebreaker {
+    align-self: center;
+    border-left: 2px solid var(--granite-light);
+    height: 80px;
+}
+
+.timelinecard:nth-last-child(-n+6) {
+    display: none; /* Initially hide the last three cards */
+}
+.timelinecard:nth-last-child(-n+6) ~ .timelinebreaker {
+    display: none; /* Hide the breakers below the last three cards */
+}
+@media only screen and (max-width: 1024px) {
+    .pageheading {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .timelinecard {
+        gap: 50px;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-areas: 
+            "line text image";
+    }
+    .timelinebreaker {
+        align-self: flex-start;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 924px) {
+    .timelinecard {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "line text"
+            "line image";
+    }
+    .timelinebreaker {
+        align-self: flex-start;
+        margin-left: 15px;
+        height: 100px;
+    }
+    .timeline_botline {
+        height: 100%;
+    }
+    .timeline_topline {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sub_hero {
+        padding: 100px 25px;
+    }
+    .about {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .timelineblock {
+        padding: 100px 25px;
+    }
+    .timelinetitle {
+        width: 100%;
+    }
+    .timelinetext {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .timelinecard {
+        gap: 10px;
+    }
+}
