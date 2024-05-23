@@ -175,6 +175,78 @@ label{
     color: black;
 }
 
+.checkbox_samtykke{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 100px 50px 0px;
+}
+
+.pentia_checkbox input {
+    position: absolute;
+    opacity: 0%;
+    cursor: pointer;
+    width:32px;
+    height: 30px;
+    
+  }
+
+.pentia_checkbox {
+    display: inline-block;
+    position: relative;
+    width:32px;
+    margin-right: 50px;
+    border-radius: var(--border-radius-on);
+    border: 0.5px solid var(--white);
+}
+
+
+.pentia_checkbox > .pentia_checkmark{
+    position: absolute;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 10px;
+    margin: 10% 0% 0% 32%; 
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.pentia_checkbox input:checked + .pentia_checkmark{
+    background-color: var(--violet);
+    border: var(--violet);
+}
+
+.pentia_checkbox > .pentia_checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.pentia_checkbox input:checked + .pentia_checkmark:after{
+    display: block;
+}
+
+
+/* .checkbox_samtykke label{
+    
+} */
+.checkbox_samtykke > .checkbox_textarea{
+    color: white;
+    max-width: 25vw;
+}
+
+.checkbox_samtykke > .checkbox_textarea > p{
+    display: flex;  
+    height:auto;
+
+}
+
+a > .buttontextcontainer {
+    color: white;
+}
+
+.primary{
+    border: 0.8px solid var(--white);
+}
+
 
 /* ______________________________________________________________ */
 .sub_hero {
