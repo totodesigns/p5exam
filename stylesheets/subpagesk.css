@@ -63,7 +63,6 @@
 .text_block_content{
     display: flex;
     align-items: center;
-    padding: 0px 113px 0px 253px;
     flex-direction: column;
     gap: 50px;
 }
@@ -205,7 +204,7 @@ label{
     transform: rotate(45deg);
     height: 20px;
     width: 10px;
-    margin: 10% 0% 0% 32%; 
+    margin: 10% 0% 0% 35%; 
     border-bottom: 3px solid white;
     border-right: 3px solid white;
 }
@@ -387,6 +386,31 @@ a > .buttontextcontainer {
         align-self: flex-start;
         margin-left: 15px;
     }
+
+    /* dennis */
+
+    .contact_row{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .input_box label{
+        width: 58vw;
+        margin-top: 3vh;
+    }
+
+    .dropdown > ul{
+        width: 58vw;
+    }
+
+    .checkbox_textarea > p{
+        width: 50vw;
+    }
+
+    .checkbox_textarea > .c1{
+        width: 50vw;
+    }
+     /* --- */
 }
 @media only screen and (max-width: 924px) {
     .timelinecard {
@@ -407,11 +431,20 @@ a > .buttontextcontainer {
     .timeline_topline {
         height: 100px;
     }
+
+/* dennis */
+
+    .sub_hero_text{
+        max-width: 71%;
+    }
+
+/* --- */
 }
 
 @media only screen and (max-width: 768px) {
     .sub_hero {
         padding: 100px 25px;
+        
     }
     .about {
         max-width: 100%;
@@ -426,6 +459,49 @@ a > .buttontextcontainer {
     .timelinetext {
         margin-top: 50px;
     }
+
+    /* Dennis' changes */
+
+
+    .text_block{
+        height: 100%;
+        padding: 100px 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .text_box{
+        max-width: 100%;
+
+    }
+    .text_content_row{
+        flex-direction: column;
+        max-width: 100%;
+        gap:50px;
+    }
+
+    .sub_hero_text{
+        max-width: 100%;
+    }
+
+
+    .contact_row{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .input_box label{
+        width: 90vw;
+        margin-top: 3vh;
+    }
+
+    .dropdown > ul{
+        width: 90vw;
+    }
+
+    .checkbox_textarea > .c1{
+        width: 68vw;
+    }
+    /* --- */
 }
 @media only screen and (max-width: 768px) {
     .timelinecard {

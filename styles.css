@@ -236,6 +236,7 @@ footer {
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 50px;
@@ -500,6 +501,9 @@ nav > p, .navlogo {
         flex-direction: column-reverse;
         height: 100%;
         gap: 100px;
+    }
+    .orginfo{
+        justify-content: flex-start;
     }
     #footerlogo {
         width: 100%;
