@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../stylesheets/subpagesk.css">
+
+    <script src="../dropdown.js" defer></script>
 </head>
 
 <body>
@@ -41,17 +44,17 @@
             </div>
             <div class="contact_form">
                 <div class="contact_row">
-                <div class="input_box"> <label>Fornavn</label> <input type="text"></div>
+                <div class="input_box"> <label>Fornavn*</label> <input type="text"></div>
 
-                <div class="input_box"> <label>Efternavn</label> <input type="text"></div>
+                <div class="input_box"> <label>Efternavn* </label> <input type="text"></div>
 
-                <div class="input_box">  <label>E-mail</label> <input type="text"></div>
+                <div class="input_box">  <label>E-mail*</label> <input type="text"></div>
                 </div>
 
                 <div class="contact_row">
-                    <div class="input_box"> <label>Jobtitel</label> <input type="text"></div>
+                    <div class="input_box"> <label>Jobtitel*</label> <input type="text"></div>
 
-                    <div class="input_box"> <label>Virksomhed</label> <input type="text"></div>
+                    <div class="input_box"> <label>Virksomhed*</label> <input type="text"></div>
 
                     <div class="input_box"> <label>Telefonnummer</label> <input type="text"></div>
                 </div>
@@ -59,13 +62,17 @@
 
             <div class="dropdown">
                 <p>Jeg vil gerne tale med jer om:</p>
-                <ul>
-                    <li>Vælg emne</li>
-                    <li>Valgmulighed</li>
-                    <li>Valgmulighed</li>
-                    <li>Valgmulighed</li>
-                    <li>Valgmulighed</li>
-                </ul>
+
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    Vælg emne <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                
+                <div class="dropdown-content" id="dropdown-content">
+                    <!-- This is where dropdown items are placed
+                    <div class="item"> Valgmulighed </div> -->
+                </div>
+
             </div>
             
             <div class="checkbox_samtykke">
@@ -89,12 +96,15 @@
 
             </div>
 
-            <a href="/subpages/kontakt.html" class="primary" >
-                <div class="buttontextcontainer" >
-                <span class="buttontextdefault">Send besked</span>
-                <span class="buttontextanimated">Send besked</span>
-                </div>
-            </a>
+            <div class="contact_primary">
+                <a href="/subpages/kontakt.html" class="primary">
+                    <div class="buttontextcontainer" >
+                    <span class="buttontextdefault">Send besked</span>
+                    <span class="buttontextanimated">Send besked</span>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
 

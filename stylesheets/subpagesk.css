@@ -41,7 +41,7 @@
 
 .text_block{
     max-width: 100%;
-    height: 1200px;
+    height: 100%;
     background-color:var(--white);
     display: flex;
     align-items: center;
@@ -144,35 +144,69 @@ label{
     flex-direction: column;
 }
 
+
+/* Dropdown area   JAVASCRIPT HERE */
 .dropdown{
-    display: inline-flex;
+    position: relative;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     color:white;
     margin-top: 50px;
 }
 
-.dropdown > ul{
+.dropbtn {
+    display: flex;
+    list-style-type: none;
+    width: 25vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.dropbtn > i {
+    display: flex;
+    margin-left: auto;
+    align-self: flex-end;
+    transition: transform 0.3s;
+}
+
+.dropbtn.active > i {
+    transform:rotate(180deg);
+}
+
+.dropdown-content{
     list-style-type: none;
     width: 25vw;
     color: black;
     background-color: white;
     padding: 1px;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    z-index: 1;
+    display:none;
 }
 
-.dropdown > ul > li{
+.dropdown-content > .item{
+    display: block;
     padding: 15px;
     background-color: var(--violet);
     color: white;
 }
 
-.dropdown > ul > li:first-child{
-    background-color: white;
+.dropdown-content .item.active {
+    background-color:var(--violet-light);
     color: black;
 }
+
+.show{
+    display: block;
+}
+
+
+
+/* Checkbox and text area VVV */
+
 
 .checkbox_samtykke{
     display: flex;
@@ -219,14 +253,11 @@ label{
     position: absolute;
     display: none;
 }
+
 .pentia_checkbox input:checked + .pentia_checkmark:after{
     display: block;
 }
 
-
-/* .checkbox_samtykke label{
-    
-} */
 .checkbox_samtykke > .checkbox_textarea{
     color: white;
     max-width: 25vw;
@@ -238,11 +269,9 @@ label{
 
 }
 
-a > .buttontextcontainer {
+/* Primary button (diff colors) */
+.contact_primary > .primary{
     color: white;
-}
-
-.primary{
     border: 0.8px solid var(--white);
 }
 
@@ -410,6 +439,13 @@ a > .buttontextcontainer {
     .checkbox_textarea > .c1{
         width: 50vw;
     }
+
+    .dropbtn{
+        width:29vw;
+    }
+    .dropdown-content{
+        width:29vw;
+    }
      /* --- */
 }
 @media only screen and (max-width: 924px) {
@@ -438,6 +474,12 @@ a > .buttontextcontainer {
         max-width: 71%;
     }
 
+    .dropbtn{
+        width:58vw;
+    }
+    .dropdown-content{
+        width:58vw;
+    }
 /* --- */
 }
 
@@ -494,12 +536,23 @@ a > .buttontextcontainer {
         margin-top: 3vh;
     }
 
+    input{
+        padding:0px;
+    }
+
     .dropdown > ul{
         width: 90vw;
     }
 
     .checkbox_textarea > .c1{
         width: 68vw;
+    }
+
+    .dropbtn{
+        width:90vw;
+    }
+    .dropdown-content{
+        width:90vw;
     }
     /* --- */
 }
