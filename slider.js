@@ -1,37 +1,57 @@
-// __________________________ Slider ________________________
+// // __ Slider __
 
-document.addEventListener('DOMContentLoaded', () => {
-    const testimonials = document.querySelectorAll('.testimonial');
-    let currentIndex = 0;
+let testimonials = document.getElementsByClassName('testimonial');
+let currentIndex = 0;
 
-    // Function to show the testimonial at the currentIndex
-    function showTestimonial(index) {
-        testimonials.forEach((testimonial, i) => {
-            if (i === index) {
-                testimonial.classList.add('active');
-            } else {
-                testimonial.classList.remove('active');
-            }
-        });
+// VIS CURRENTINDEX
+showTestimonial(currentIndex);
+
+// LYT TIL VENSTRE PIL
+let leftArrows = document.getElementsByClassName('leftarrow');
+
+for (let i = 0 ; i < leftArrows.length ; i++) {
+    leftArrows[i].addEventListener('click', function() {
+
+        if (currentIndex === 0) {
+            //TRUE
+            currentIndex = testimonials.length - 1;
+            showTestimonial(currentIndex);
+
+        } else {
+            //FALSE
+            currentIndex = currentIndex - 1;
+            showTestimonial(currentIndex);
+        }
+    });
+}
+
+// LYT TIL HØJRE PIL
+let rightArrows = document.getElementsByClassName('rightarrow');
+
+for (let i = 0; i < rightArrows.length; i++) {
+    rightArrows[i].addEventListener('click', function() {
+
+        if (currentIndex === testimonials.length - 1) {
+            currentIndex = 0;
+            showTestimonial(currentIndex);
+        } else {
+            currentIndex = currentIndex + 1;
+            showTestimonial(currentIndex);
+        }
+    });
+}
+
+// NÅR PIL ER KLIKKET, AKTIVER DENNE FUNKTION.
+// KØRER ALLE TESTIMONIAL INDEX'ER IGENNEM OG SER, OM DE ER LIG MED CURRENTINDEX.
+// FJERNER 'active'-CLASS HVIS NEJ, TILFØJER HVIS JA
+function showTestimonial(index) {
+    for (let i = 0; i < testimonials.length; i++) {
+        if (i === index) {
+            testimonials[i].classList.add('active');
+        } else {
+            testimonials[i].classList.remove('active');
+        }
     }
-
-    // Event listeners for the arrow buttons
-    document.querySelectorAll('.sliderarrows .leftarrow').forEach(leftArrow => {
-        leftArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
-            showTestimonial(currentIndex);
-        });
-    });
-
-    document.querySelectorAll('.sliderarrows .rightarrow').forEach(rightArrow => {
-        rightArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
-            showTestimonial(currentIndex);
-        });
-    });
-
-    // Show the first testimonial initially
-    showTestimonial(currentIndex);
-});
+};
 
 
