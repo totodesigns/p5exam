@@ -276,7 +276,7 @@ nav {
     align-items: center;
     padding: 0px 50px;
     position: fixed;
-   
+    z-index: 2;
 }
 nav > p, .navlogo {
     color: var(--white);
@@ -286,58 +286,58 @@ nav > p, .navlogo {
 }
 
     /* Hamburger menu  _________________________________________________________________________*/
-    li a h1, li a .t1 {
-        color: var(--black)
-    }
-      .menuItem {
-        display: block;
-        margin: 2rem 4rem;
-        font-size: 1.8rem;
-        color: var(--black);
-        text-decoration: none;
-        
-      }
-      
-      .menuItem:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 4px;
 
-      }
-      
-      .hamburger {
-        position: fixed;
-        z-index: 100;
-        top: 1rem;
-        right: 1rem;
-        padding: 4px;
-        cursor: pointer;
-      }
-      
-      .closeIcon {
-        display: none;
-      }
-      
-      .menu {
-        position: fixed;
-        transform: translateY(-300%);
-        transition: transform 0.6s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        background: var(--greywhite);
-        color: var(--black);
-        list-style: none;
-        padding-top: 180px;
-        padding-left: 33vw;
-        text-align: top;
-      }
-      
-      .showMenu {
-        transform: translateY(0);
-      }
-  
+li > a > h1, li > a > .t1 {
+    color: var(--black)
+}
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-decoration: none;
+
+}
+.menuItem:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+
+}
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+}
+.closeIcon {
+    display: none;
+}
+.menu {
+    position: fixed;
+    transform: translateY(-300%);
+    transition: transform 0.6s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--greywhite);
+    color: var(--black);
+    list-style: none;
+    padding-top: 180px;
+    padding-left: 33vw;
+    text-align: top;
+}
+
+.subitem {
+    margin: 1rem 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
 
     /* CONTACT BLOCK ______________________________________________________________________________*/
 
@@ -536,6 +536,15 @@ nav > p, .navlogo {
     .buttontextdefault, .buttontextanimated {
         text-align: center;
     }
+    .menu {
+        padding-left: 15vw;
+    }
+    .menuItem {
+        margin: 2.5rem 4rem;
+    }
+    .subitem {
+        margin: 1rem 4rem;
+    }
     .testimonial {
         padding: 100px 25px;
         gap: 50px;
@@ -591,7 +600,9 @@ nav > p, .navlogo {
         flex-wrap: nowrap;
         align-items: flex-start;
     }
-
+    .menu {
+        padding-left: 0;
+    }
     .testimonial_textframe {
         min-height: 300px;
     }
