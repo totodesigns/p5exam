@@ -349,8 +349,16 @@ label{
     gap: 25px;
     align-self: stretch;
 }
-.timelinetext {
+
+.imgleft {
     grid-area: text;
+}
+
+.imgright {
+    grid-area: image;
+}
+
+.timelinetext {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -367,15 +375,14 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     align-self: stretch;
 }
 .timeline_topline, .timeline_botline {
     border-left: 2px solid var(--granite-light);
-    height: 250px;
+    height: 100%;
 }
 .timelineimg {
-    grid-area: image;
     width: 100%;
     height: auto;
 }
