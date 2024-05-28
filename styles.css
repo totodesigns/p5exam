@@ -173,11 +173,11 @@ a, button {
     gap: 10px;
 }
 .secondary > svg {
-    transition: transform 0.3s cubic-bezier(.23,1,.32,1); /* Smooth transition for the arrow */
+    transition: transform 0.3s cubic-bezier(.23,1,.32,1);
     transform-origin: left;
 }
 .secondary:hover > svg {
-    transform: scaleX(1.4); /* Adjust the value as needed to stretch the arrow */
+    transform: scaleX(1.4);
 }
 .secondary:hover > p {
     text-decoration: underline;
@@ -185,24 +185,26 @@ a, button {
     text-decoration-thickness: 2px;
 }
 #scrollBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #222222; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #scrollBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    background-color: var(--black);
+    opacity: 50%;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.2s ease-out;
+}
+#scrollBtn > svg > path {
+    fill: var(--white);
+}
+#scrollBtn:hover {
+    bottom: 20px;
+    opacity: 70%;
+}
 
 /*_______________________ GLOBAL BLOCKS ______________________________________________________________________________*/
 

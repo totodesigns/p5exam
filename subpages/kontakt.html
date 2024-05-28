@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../stylesheets/subpagesk.css">
 
     <script src="../dropdown.js" defer></script>
+    <script src="../scrolltotop.js" defer></script>
 </head>
 
 <body>
@@ -22,143 +23,150 @@
         <a href="../index.html"><p class="t2 navlogo">Pentia</p></a>
         <p>Menu</p>
     </nav>
-    <section class="sub_hero greybg">
-            <div class="pageheading" >
-                <div class="titleframe">
-                    <p class="t2"style="color:black;">Fællesskab</p>
-                </div>
-                <h1 style="color:black;">Ved du, hvorfor vi er Odenses fedeste arbejdsplads?</h1>
-            </div>
-        <div class="fake_pic" style="background-color: var(--black);"></div>
-    </section>
-
-    <section class="sub_hero" style="background-color: var(--violet);">
-
-        <div>
-            <div id="contact_heading">
-                <div class="t2" style="color: var(--white);">Kontakt os
-                    <h3 style="color: var(--white);"> 
-                        Vil du gerne høre mere?<br><br>
-                    </h3>
-                </div>
-            </div>
-            <div class="contact_form">
-                <div class="contact_row">
-                <div class="input_box"> <label>Fornavn*</label> <input type="text"></div>
-
-                <div class="input_box"> <label>Efternavn* </label> <input type="text"></div>
-
-                <div class="input_box">  <label>E-mail*</label> <input type="text"></div>
-                </div>
-
-                <div class="contact_row">
-                    <div class="input_box"> <label>Jobtitel*</label> <input type="text"></div>
-
-                    <div class="input_box"> <label>Virksomhed*</label> <input type="text"></div>
-
-                    <div class="input_box"> <label>Telefonnummer</label> <input type="text"></div>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <p>Jeg vil gerne tale med jer om:</p>
-
-                <button class="dropbtn" onclick="toggleDropdown()">
-                    Vælg emne <i class="fa-solid fa-chevron-down"></i>
-                </button>
-
-                
-                <div class="dropdown-content" id="dropdown-content">
-                    <!-- This is where dropdown items are placed
-                    <div class="item"> Valgmulighed </div> -->
-                </div>
-
-            </div>
-            
-            <div class="checkbox_samtykke">
-
-                <label class="pentia_checkbox">
-                    <input type="checkbox">
-                    <span class="pentia_checkmark"></span>
-                </label>
-
-                <div class="checkbox_textarea">
-                  <p> Jeg accepterer vilkår og betingelser </p>
-                  <br>
-                  <div class="c1">
-                    Ved registrering giver du samtykke til, at Pentia Group må kommunikere 
-                    og markedsføre til dig i henhold til Pentias privatlivspolitik. Vi behandler 
-                    dine oplysninger ansvarsfuldt og med respekt for dit privatliv, og du kan til 
-                    enhver tid trække dit samtykke tilbage.
-                  </div>
-                </div>
-
-
-            </div>
-
-            <div class="contact_primary">
-                <a href="/subpages/kontakt.html" class="primary">
-                    <div class="buttontextcontainer" >
-                    <span class="buttontextdefault">Send besked</span>
-                    <span class="buttontextanimated">Send besked</span>
+    <main>
+        <section class="sub_hero greybg">
+                <div class="pageheading" >
+                    <div class="titleframe">
+                        <p class="t2"style="color:black;">Fællesskab</p>
                     </div>
-                </a>
+                    <h1 style="color:black;">Ved du, hvorfor vi er Odenses fedeste arbejdsplads?</h1>
+                </div>
+            <div class="fake_pic" style="background-color: var(--black);"></div>
+        </section>
+        <section class="sub_hero" style="background-color: var(--violet);">
+
+            <div>
+                <div id="contact_heading">
+                    <div class="t2" style="color: var(--white);">Kontakt os
+                        <h3 style="color: var(--white);"> 
+                            Vil du gerne høre mere?<br><br>
+                        </h3>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <div class="contact_row">
+                    <div class="input_box"> <label>Fornavn*</label> <input type="text"></div>
+
+                    <div class="input_box"> <label>Efternavn* </label> <input type="text"></div>
+
+                    <div class="input_box">  <label>E-mail*</label> <input type="text"></div>
+                    </div>
+
+                    <div class="contact_row">
+                        <div class="input_box"> <label>Jobtitel*</label> <input type="text"></div>
+
+                        <div class="input_box"> <label>Virksomhed*</label> <input type="text"></div>
+
+                        <div class="input_box"> <label>Telefonnummer</label> <input type="text"></div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <p>Jeg vil gerne tale med jer om:</p>
+
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        Vælg emne <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    
+                    <div class="dropdown-content" id="dropdown-content">
+                        <!-- This is where dropdown items are placed
+                        <div class="item"> Valgmulighed </div> -->
+                    </div>
+
+                </div>
+                
+                <div class="checkbox_samtykke">
+
+                    <label class="pentia_checkbox">
+                        <input type="checkbox">
+                        <span class="pentia_checkmark"></span>
+                    </label>
+
+                    <div class="checkbox_textarea">
+                    <p> Jeg accepterer vilkår og betingelser </p>
+                    <br>
+                    <div class="c1">
+                        Ved registrering giver du samtykke til, at Pentia Group må kommunikere 
+                        og markedsføre til dig i henhold til Pentias privatlivspolitik. Vi behandler 
+                        dine oplysninger ansvarsfuldt og med respekt for dit privatliv, og du kan til 
+                        enhver tid trække dit samtykke tilbage.
+                    </div>
+                    </div>
+
+
+                </div>
+
+                <div class="contact_primary">
+                    <a href="/subpages/kontakt.html" class="primary">
+                        <div class="buttontextcontainer" >
+                        <span class="buttontextdefault">Send besked</span>
+                        <span class="buttontextanimated">Send besked</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
 
+
+        </section>
+    </main>
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+            <path d="M2.121 14.121L12 4.245L21.879 14.1225L24 12L12 0L0 12L2.121 14.121Z" fill="#222222"/>
+          </svg>
+    </button>
+    <footer>
+        <div class="footercta">
+            <p class="t1">Lad os tales ved</p>
+            <a href="/subpages/kontakt.html" class="secondary">
+                <p>Kontakt os</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M19 12.479L16.008 15.486L15.2703 14.743L17.0273 12.986H0.302734V11.986H17.0273L15.2843 10.243L16.007 9.5L19 12.479Z" fill="black"/>
+                </svg>
+            </a>
         </div>
-
-
-    </section>
+        <div class="org">
+            <span id="footerlogo">
+                Pentia
+            </span>
+            <div class="orginfo">
+                <div class="orgcard">
+                    <p class="t4">København</p>
+                    <div class="orgaddress">
+                        <p>Islands Brygge 55</p>
+                        <p>2300 København</p>
+                    </div>
+                </div>
+                <div class="orgcard">
+                    <p class="t4">Odense</p>
+                    <div class="orgaddress">
+                        <p>Edisonsvej 2</p>
+                        <p>5000 Odense</p>
+                    </div>
+                </div>
+                <div class="orgcard">
+                    <p class="t4">Malmö</p>
+                    <div class="orgaddress">
+                        <p>Södra Förstadsg 1</p>
+                        <p>211 43 Malmö</p>
+                    </div>
+                </div>
+                <div class="orgcard">
+                    <div class="orgaddress">
+                        <p>+45 7023 3330</p>
+                        <p>info@pentia.dk</p>
+                    </div>
+                </div>
+                <div class="orgcard">
+                    <div class="orgaddress">
+                        <p>CVR: 20868872</p>
+                        <p>LinkedIn</p>
+                        <p>Privatlivspoltik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footercta">
-        <p class="t1">Lad os tales ved</p>
-        <a href="/subpages/kontakt.html" class="secondary">
-            <p>Kontakt os</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                <path d="M19 12.479L16.008 15.486L15.2703 14.743L17.0273 12.986H0.302734V11.986H17.0273L15.2843 10.243L16.007 9.5L19 12.479Z" fill="black"/>
-            </svg>
-        </a>
-    </div>
-    <div class="org">
-        <span id="footerlogo">
-            Pentia
-        </span>
-        <div class="orginfo">
-            <div class="orgcard">
-                <p class="t4">København</p>
-                <div class="orgaddress">
-                    <p>Islands Brygge 55</p>
-                    <p>2300 København</p>
-                </div>
-            </div>
-            <div class="orgcard">
-                <p class="t4">Odense</p>
-                <div class="orgaddress">
-                    <p>Edisonsvej 2</p>
-                    <p>5000 Odense</p>
-                </div>
-            </div>
-            <div class="orgcard">
-                <p class="t4">Malmö</p>
-                <div class="orgaddress">
-                    <p>Södra Förstadsg 1</p>
-                    <p>211 43 Malmö</p>
-                </div>
-            </div>
-            <div class="orgcard">
-                <div class="orgaddress">
-                    <p>+45 7023 3330</p>
-                    <p>info@pentia.dk</p>
-                </div>
-            </div>
-            <div class="orgcard">
-                <div class="orgaddress">
-                    <p>CVR: 20868872</p>
-                    <p>LinkedIn</p>
-                    <p>Privatlivspoltik</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+</html>
