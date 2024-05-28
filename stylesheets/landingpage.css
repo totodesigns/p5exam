@@ -5,17 +5,35 @@
     padding-bottom: 100px;
     gap: 50px;
 }
+    /* VIDEO ______________________________________________________________________________*/
 .moodvideo {
-    background: var(--sand);
+    position: relative;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+
+.moodvideo > video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.videotext {
+    position: relative;
     color: var(--white);
     display: flex;
     width: 100%;
-    height: 740px;
+    height: 100%;
     padding: 186px 50px 80px 50px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    z-index: 1;
 }
+
 .about {
     color: var(--violet-lightest);
     max-width: 37%;
@@ -138,7 +156,16 @@
 
 @media only screen and (max-width: 768px) {
     .moodvideo {
-        padding: 100px 25px;
+        padding: 25px 0px;
+        height: 650px;
+    }
+    .moodvideo > video {
+        object-fit: cover;
+        height: 100%;
+    }
+    .videotext {
+        height: 100%;
+        padding: 50px 25px;
     }
     .about {
         max-width: 100%;
