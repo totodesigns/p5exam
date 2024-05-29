@@ -15,28 +15,31 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylesheets/landingpage.css">
 
-    <script src="slider.js" defer></script>
-    <script src="burgermenu.js" defer></script>
-    <script src="scrolltotop.js" defer></script>
+    <script src="/scripts/slider.js" defer></script>
+    <script src="/scripts/burgermenu.js" defer></script>
+    <script src="/scripts/scrolltotop.js" defer></script>
 
 
 </head>
 <body>
-    <nav>
-        <a href="index.html"><p class="t2 navlogo">Pentia</p></a>     
-            <ul class="menu">
-                <li class="menuItem"><h1>Ydelser</h1></li>
-                <li class="menuItem"><h1 class=>Projekter</h1></li>
-                <li class="menuItem"><h1 class=>Viden</h1></li>
-                <li class="menuItem"><h1 class=>Om os</h1></li>
-                <li class="menuItem subitem"><p class="t1">Events</p></li>
-                <li class="menuItem subitem"><p class="t1">Nyheder</p></li>
-                <li class="menuItem subitem"><p class="t1">ESG</p></li>
-                <li class="menuItem subitem"><p class="t1">Karriere</p></li>
-                <li class="menuItem subitem"><p class="t1">Kontakt</p></li>
-            </ul>
-        <p id="navneSkift"class="hamburger">Menu</p>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html"><p class="t2 navlogo">Pentia</p></a>     
+                <ul class="menu">
+                    <li class="menuItem"><h1>Ydelser</h1></li>
+                    <li class="menuItem"><h1>Projekter</h1></li>
+                    <li class="menuItem"><h1>Viden</h1></li>
+                    <li class="menuItem"><h1>Om os</h1></li>
+                    <li class="menuItem subitem"><p class="t1">Events</p></li>
+                    <li class="menuItem subitem"><p class="t1">Nyheder</p></li>
+                    <li class="menuItem subitem"><p class="t1">ESG</p></li>
+                    <li class="menuItem subitem"><p class="t1">Karriere</p></li>
+                    <li class="menuItem subitem"><p class="t1">Kontakt</p></li>
+                </ul>
+            <p id="navneSkift" class="hamburger">Menu</p>
+        </nav>        
+    </header>
+
     <main>
         <section class="hero">
             <div class="moodvideo">
@@ -44,16 +47,17 @@
                     <source src="images/Stemningsvideo.mp4" type="video/mp4">
                 </video>
                 <div class="videotext">
-                    <h1>De fedeste Apps bliver udviklet her i Odense</h1>
+                    <h1>Awesome Apps bliver udviklet her i Odense</h1>
                 </div>
             </div>
             <div class="about">
                 <p class="t1">Velkommen til Odense</p>
-                <p class="t3">I det åbne kontormiljø går ingen fri. Du når ikke længere end til dørmåtten, før kollegaerne minder dig om hvor dårlig du var til sidste spilledag! Det er kærligt ment, men bliv ikke overrasket hvis der står taberkage på dit skrivebord. I det mindste smager kage altid godt.
-
-                    Når kagen så er spist, skal den jo forbrændes. Gider du ikke betale for motion? Vi betaler for din træning. Nemt. Du får 2 betalte arbejdstimers løn om ugen, til betalt bevægelse. 
-                    
-                    Så er det ligemeget om du hopper på trampolin, springer i faldskærm eller løfter godt gammeldags jern. Skak og esport tæller ikke!</p>
+                <p class="t3">Skaber vi os for meget?<br><br>
+                    Hos Pentia skaber vi mere end apps. Vi skaber fællesskab. 
+                    Vi lover dig life-work balance, fordi vi tror på, at livet kommer før arbejde.
+                    Selvom vi skaber awesome apps, er der også plads til sjov på arbejdspladsen. 
+                    Der er en god kemi iblandt kollegaerne, og der er altid plads til venskabelige drilleri. 
+                    Udover det er der to timers betalt motion om ugen, som er med til at styrke fælleskabet.</p>
                 <a href="subpages/about.html" class="secondary">
                     <p class="t2">Læs mere om os</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -64,10 +68,10 @@
         </section>
         <section class="benefits">
             <div class="fiftyblock">
-                <picture class="fiftyimgframe" id="rightimg">
-                    <img src="images/social.jpg" width="100%" height="100%" alt="Glade mennesker, der arbejder i fællesskab" loading="lazy">
+                <picture class="fiftyimgframe">
+                    <img src="images/social.jpg" alt="Glade mennesker, der arbejder i fællesskab" loading="lazy">
                 </picture>                
-                <div class="textgap" id="fiftytext">
+                <div class="textgap fiftytext">
                     <h3>Fællesskabet</h3>
                     <p>Igennem årene har vi her hos Pentia Mobile vægtet fællesskabet højt, vi tilbringer så meget tid sammen, så hvorfor ikke gøre det bedste ud af det? 
 
@@ -83,8 +87,8 @@
             <div class="fiftyblock" id="fiftycolor">
                 <div class="textgap" id="fiftytextcolor">
                     <h3>Faglig udvikling</h3>
-                    <p>Igennem årene har vi her hos Pentia Mobile vægtet fællesskabet højt, vi tilbringer så meget tid sammen, så hvorfor ikke gøre det bedste ud af det? 
-                        Noget af det bedste ved en arbejdsplads er at man skal kunne have en god relation til sine kollegaer, og det er netop derfor vi ikke er bange for at dedikere vores tid til det!</p>
+                    <p>En arbejdsplads skal være mere end blot et sted, hvor du sidder fast og laver det samme hver dag uden nogen udvikling. 
+                        Hos Pentia mener vi, at der altid skal være tid til læring. Derfor har vi en time hver uge, der kan bruges til din egen personlige læring og faglige udvikling. </p>
                     <a href="/subpages/fagligudvikling.html" class="secondary">
                         <p class="t2">Læs mere om vores faglige udvikling</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -93,18 +97,17 @@
                     </a>
                 </div>                
                 <picture class="fiftyimgframe">
-                    <img src="images/faglig.jpg" width="100%" height="100%" alt="En kollega, der hjælper en anden kollega med noget fagligt" loading="lazy">
+                    <img src="images/faglig.jpg" alt="En kollega, der hjælper en anden kollega med noget fagligt" loading="lazy">
                 </picture>
             </div>
             <div class="fiftyblock">
-                <picture class="fiftyimgframe" id="rightimg">
-                    <img src="images/lifework.jpg" width="100%" height="100%" alt="Mennesker, der nyder en solnedgang, der symboliserer et godt liv i balance" loading="lazy">
+                <picture class="fiftyimgframe">
+                    <img src="images/lifework.jpg" alt="Mennesker, der nyder en solnedgang, der symboliserer et godt liv i balance" loading="lazy">
                 </picture>                
-                <div class="textgap" id="fiftytext">
+                <div class="textgap fiftytext">
                     <h3>Life-work Balance</h3>
-                    <p>Igennem årene har vi her hos Pentia Mobile vægtet fællesskabet højt, vi tilbringer så meget tid sammen, så hvorfor ikke gøre det bedste ud af det? 
-
-                        Noget af det bedste ved en arbejdsplads er at man skal kunne have en god relation til sine kollegaer, og det er netop derfor vi ikke er bange for at dedikere vores tid til det!</p>
+                    <p>Hos Pentia kommer livet først. Der fokus på kollegaernes velfærd og trivsel, derfor kalder vi det Life-Work balance frem for Work-Life balance.<br><br>
+                        Vi tror på frihed under ansvar. Derfor er vi super fleksible og har altid fokus på, at din hverdag på arbejdet kan hænge sammen med livet. </p>
                     <a href="/subpages/lifeworkbalance.html" class="secondary">
                         <p class="t2">Læs hvordan vi balancerer arbejdet</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -129,7 +132,7 @@
         <section class="testimonial_slider">
             <div class="testimonial violetbg">
                 <div class="testimonial_textframe">
-                    <h2>“Ledermand Hansen er så sej. Han er åben, imødekommende og humoristisk. Han er samtidig flittig og sørger for at forholde sig kritisk. Så lærer vi bedst!”</h2>
+                    <h2>“Jeg kan komme og gå som det passer mig, så længe jeg kan nå det jeg skal.”</h2>
                 </div>
                 <div class="testimonial_botrow">
                     <div class="employee">
@@ -167,7 +170,7 @@
             </div>
             <div class="testimonial greenbg">
                 <div class="testimonial_textframe">
-                    <h2>“Ledermand Hansen er altid støttende med mit arbejde. Han fortæller også, når jeg kan gøre noget bedre. Det er fedt.”</h2>
+                    <h2>“Det er en meget åben kultur, folk er glade når de kommer på arbejde, driller hinanden, snakker åbent til hinanden om, hvordan tingene skal gå fremad.”</h2>
                 </div>
                 <div class="testimonial_botrow">
                     <div class="employee">
@@ -205,7 +208,7 @@
             </div>
             <div class="testimonial redbg">
                 <div class="testimonial_textframe">
-                    <h2>“Jeg bliver altid motiveret til at komme på arbejde, når Ledermand Hansen er på kontoret. Han løfter bare stemningen med sin energi!”</h2>
+                    <h2>“Den sociale banter iblandt kollegaerne når vi arbejder sammen er med til at skabe fællesskab, sjov og hygge på arbejdspladsen"</h2>
                 </div>
                 <div class="testimonial_botrow">
                     <div class="employee">
@@ -245,7 +248,7 @@
         <section class="jobblock">
             <div class="jobheading">
                 <p class="t2" id="titlewidth">Du fortjener mere end bare et job.</p>
-                <p>Lad os tage en kop kaffe og finde ud af, om du passer ind i jargonen.</p>
+                <p>Lad os tage en kop kaffe og finde ud af, om du passer ind i vores awesome jargon.</p>
             </div>
             <div class="jobcards">
                 <hr>
@@ -318,7 +321,7 @@
             </div>
             </div>
             <div class="contactimgframe">
-              <img src="images/employees/377A9963.jpg" width="100%" height="100%" style="object-fit: cover" alt="Medarbejderportræt af kontaktpersonen" loading="lazy">
+              <img src="images/employees/377A9963.jpg" style="object-fit: cover" alt="Medarbejderportræt af kontaktpersonen" loading="lazy">
             </div>
           </section>
     </main>

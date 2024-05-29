@@ -76,10 +76,10 @@
     
 }
 
-
 .text_box{
     display: flex;
-    max-width: 44%;
+    width: 100%;
+    align-self: flex-start;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -275,7 +275,6 @@ label{
     border: 0.8px solid var(--white);
 }
 
-
 /* ______________________________________________________________ */
 .sub_hero {
     display: flex;
@@ -306,6 +305,12 @@ label{
     height: 688px;
     align-self: stretch;
 }
+.sub_hero_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about {
     color: var(--sand-lightest);
     max-width: 37%;
@@ -403,6 +408,32 @@ label{
 .timelinecard:nth-last-child(-n+6) ~ .timelinebreaker {
     display: none; /* Hide the breakers below the last three cards */
 }
+.video_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 10px;
+}
+.videotitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.videotitle > h4, .videotitle > .t2 {
+    text-align: center;
+}
+
+.video_block > iframe {
+    width: 66vw;
+    height: 700px;
+}
+
+#lighttext > h1, #lighttext > .titleframe > p {
+    color: var(--black);
+}
+
 @media only screen and (max-width: 1024px) {
     .pageheading {
         flex-direction: column;
@@ -429,7 +460,10 @@ label{
         margin-left: 15px;
     }
 
-    /* dennis */
+    .video_block > iframe {
+        width: 66vw;
+        height: 500px;
+    }
 
     .contact_row{
         flex-direction: column;
@@ -480,9 +514,19 @@ label{
     .timeline_topline {
         height: 100px;
     }
-
-/* dennis */
-
+    .video_block > iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .text_block{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .text_content_row{
+        flex-direction: column;
+        max-width: 100%;
+        gap:25px;
+    }
     .sub_hero_text{
         max-width: 71%;
     }
@@ -493,7 +537,7 @@ label{
     .dropdown-content{
         width:58vw;
     }
-/* --- */
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -518,31 +562,22 @@ label{
     .timelinetext {
         margin-top: 50px;
     }
-
-    /* Dennis' changes */
-
-
     .text_block{
-        height: 100%;
-        padding: 100px 20px;
-        flex-direction: column;
-        gap: 50px;
+        padding: 100px 25px;
     }
-    .text_box{
-        max-width: 100%;
-
+    .video_block {
+        padding: 100px 25px;
     }
-    .text_content_row{
-        flex-direction: column;
-        max-width: 100%;
-        gap:50px;
+    .videotitle > h4, .videotitle > .t2 {
+        text-align: left;
+        align-self: flex-start;
     }
-
+    .videotitle > .t2 {
+        font-size: 16px;
+    }
     .sub_hero_text{
         max-width: 100%;
     }
-
-
     .contact_row{
         flex-direction: column;
         max-width: 100%;
@@ -571,5 +606,9 @@ label{
     .dropdown-content{
         width:90vw;
     }
-    /* --- */
+}
+@media only screen and (max-width: 375px) {
+    .video_block > iframe {
+        height: 300px;
+    }
 }

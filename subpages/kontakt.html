@@ -14,27 +14,44 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../stylesheets/subpagesk.css">
 
-    <script src="../dropdown.js" defer></script>
-    <script src="../scrolltotop.js" defer></script>
+    <script src="/scripts/slider.js" defer></script>
+    <script src="/scripts/burgermenu.js" defer></script>
+    <script src="/scripts/scrolltotop.js" defer></script>
+    <script src="/scripts/dropdown.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html"><p class="t2 navlogo">Pentia</p></a>
-        <p>Menu</p>
-    </nav>
+    <header>
+        <nav>
+            <a href="../index.html"><p class="t2 navlogo">Pentia</p></a>     
+                <ul class="menu">
+                    <li class="menuItem"><h1>Ydelser</h1></li>
+                    <li class="menuItem"><h1>Projekter</h1></li>
+                    <li class="menuItem"><h1>Viden</h1></li>
+                    <li class="menuItem"><h1>Om os</h1></li>
+                    <li class="menuItem subitem"><p class="t1">Events</p></li>
+                    <li class="menuItem subitem"><p class="t1">Nyheder</p></li>
+                    <li class="menuItem subitem"><p class="t1">ESG</p></li>
+                    <li class="menuItem subitem"><p class="t1">Karriere</p></li>
+                    <li class="menuItem subitem"><p class="t1">Kontakt</p></li>
+                </ul>
+            <p id="navneSkift" class="hamburger">Menu</p>
+        </nav>         
+    </header>
+
     <main>
         <section class="sub_hero greybg">
-                <div class="pageheading" >
-                    <div class="titleframe">
-                        <p class="t2"style="color:black;">Fællesskab</p>
-                    </div>
-                    <h1 style="color:black;">Ved du, hvorfor vi er Odenses fedeste arbejdsplads?</h1>
+            <div class="pageheading" id="lighttext">
+                <div class="titleframe">
+                    <p class="t2">Kontakt</p>
                 </div>
-            <div class="fake_pic" style="background-color: var(--black);"></div>
+                <h1>Vi svarer på alle dine spørgsmål, både gode og dårlige</h1>
+            </div>
+            <picture class="sub_hero_img">
+                <img src="../images/contact.jpg">
+            </picture>
         </section>
-        <section class="sub_hero" style="background-color: var(--violet);">
-
+        <section class="sub_hero violetbg">
             <div>
                 <div id="contact_heading">
                     <div class="t2" style="color: var(--white);">Kontakt os

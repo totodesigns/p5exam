@@ -2,8 +2,6 @@ const menu = document.querySelector(".menu");
 const hamburger= document.querySelector(".hamburger");
 const menuItems = document.getElementsByClassName("menuItem");
 
-
-
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -16,9 +14,7 @@ function toggleMenu() {
   }
 }
 
-
 hamburger.addEventListener("click", toggleMenu);
-
 
 Array.from(menuItems).forEach(function(menuItem) { 
     menuItem.addEventListener("click", toggleMenu);

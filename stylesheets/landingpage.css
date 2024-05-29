@@ -54,16 +54,16 @@
     align-items: stretch;
 }
 
-#fiftytext {
+.fiftytext {
     width: 50%;
     justify-content: center;
 }
 
-#rightimg {
-    justify-self: flex-end;
-}
 .fiftyimgframe {
     width: 50%;
+}
+.fiftyimgframe > img {
+    width: 100%;
 }
 #fiftycolor {
     background-color: var(--green);
