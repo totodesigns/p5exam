@@ -148,20 +148,20 @@ a, button {
     border: 0.8px solid var(--black);
 }
 .buttontextcontainer {
-    height: 1rem; /* Ensure this height matches the height of your text */
+    height: 3rem; /* Ensure this height matches the height of your text */
     display: flex;
     flex-direction: column;
-    gap: 0; /* Remove the gap to prevent unwanted spacing */
+    gap: 15px;
     overflow: hidden;
 }
 .buttontextdefault, .buttontextanimated {
     transition: transform .3s cubic-bezier(.23,1,.32,1);
 }
 .primary:hover .buttontextdefault {
-    transform: translateY(-1.4rem);
+    transform: translateY(-2.4rem);
 }
 .primary:hover .buttontextanimated {
-    transform: translateY(-1.4rem);
+    transform: translateY(-2.4rem);
 }
 
     /* SECONDARY ______________________________________________________________________________*/
@@ -223,8 +223,15 @@ section {
     flex-direction: column;
     gap: 25px;
 }
+
+    /* MEDIA ______________________________________________________________________________*/
+
 img {
     object-fit: cover;
+}
+
+iframe {
+    border: none;
 }
 
     /* FOOTER ______________________________________________________________________________*/
@@ -327,7 +334,6 @@ li > a > h1, li > a > .t1 {
     list-style: none;
     padding-top: 180px;
     padding-left: 33vw;
-    text-align: top;
 }
 
 .subitem {
